@@ -65,3 +65,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "sassc", "~> 2.4"
