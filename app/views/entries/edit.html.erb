@@ -1,10 +1,14 @@
-<h1>Editing entry</h1>
+<h1 class="title is-4 has-text-link has-text-weight-bold">Editing entry</h1>
 
 <%= render "form", entry: @entry %>
 
 <br>
 
-<div>
-  <%= link_to "Show this entry", @entry %> |
-  <%= link_to "Back to entries", entries_path %>
+<div class="field is-grouped">
+  <div class="control">  
+      <%= link_to "Show this entry", @entry, class: "button is-link" %>
+  </div>
+  <div>
+    <%= link_to "Back to entries", entries_path, class: "button" %>
+  </div>
 </div>

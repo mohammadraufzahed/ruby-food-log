@@ -1,14 +1,6 @@
-<p style="color: green"><%= notice %></p>
 
-<h1>Entries</h1>
-
-<div id="entries">
+<div id="entries" class="columns mt-6 is-variable is-3 is-multiline" style="width: 100%;gap: 32px">
   <% @entries.each do |entry| %>
     <%= render entry %>
-    <p>
-      <%= link_to "Show this entry", entry %>
-    </p>
   <% end %>
 </div>
-
-<%= link_to "New entry", new_entry_path %>
