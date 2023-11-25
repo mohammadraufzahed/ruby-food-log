@@ -67,3 +67,5 @@ group :test do
 end
 
 gem "sassc", "~> 2.4"
+
+gem "cssbundling-rails", "~> 1.3"
