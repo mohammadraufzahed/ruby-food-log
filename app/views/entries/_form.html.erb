@@ -1,13 +1,15 @@
 <%= form_with(model: entry, class: "box", html: { style: "max-width: 800px" }) do |form| %>
   <% if entry.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(entry.errors.count, "error") %> prohibited this entry from being saved:</h2>
+    <div class="message">
+      <div class="message-header has-background-danger">
+        <p class=""><%= pluralize(entry.errors.count, "error") %> prohibited this entry from being saved:</p>
+      </div>
 
-      <ul>
+      <div class="message-body has-background-danger-light" >
         <% entry.errors.each do |error| %>
-          <li><%= error.full_message %></li>
+          <p class="has-text-weight-semibold has-text-danger"><%= error.full_message %></p>
         <% end %>
-      </ul>
+      </div>
     </div>
   <% end %>
 
